@@ -1,14 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <script defer src="./js/script.js"></script>
-    <link rel="stylesheet" href="./css/style.css">
-</head>
-<body>
-    
-</body>
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@3.0.3/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-blue-500 h-screen">
+    <form action="/action_page.php">
+      <input
+        type="color"
+        id="favcolor"
+        name="favcolor"
+        value="#ff0000"
+      /><br /><br />
+      <input type="submit" />
+    </form>
+    <div id="container" class="container bg-red-500 grid-cols-3 w-72 h-72">
+      <input
+        type="range"
+        min="1"
+        max="30"
+        value="1"
+        class="slider"
+        id="rangeInput"
+      />
+    </div>
+  </body>
 </html>
