@@ -7,6 +7,7 @@ const gridDimensions = document.querySelector("#gridDimensions")
 const resetBtn = document.querySelector("#resetBtn");
 
 let number = 16;
+inputRange.value = number;
 
 let squaredNumber = Math.pow(number, 2);
 
