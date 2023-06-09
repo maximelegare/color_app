@@ -16,24 +16,41 @@
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body class="bg-blue-500 h-screen">
-    <form action="/action_page.php">
-      <input
-        type="color"
-        id="favcolor"
-        name="favcolor"
-        value="#ff0000"
-      /><br /><br />
-      <input type="submit" />
-    </form>
-    <div id="container" class="container bg-red-500 grid-cols-3 w-72 h-72">
-      <input
-        type="range"
-        min="1"
-        max="30"
-        value="1"
-        class="slider"
-        id="rangeInput"
-      />
+    <div class="flex flex-col items-center gap-8 pt-4">
+      <div
+        class="flex flex-col items-center gap-6 p-4 bg-[#ffffff20] rounded-xl drop-shadow-md"
+      >
+        <div class="flex flex-col items-center gap-2">
+          <h3 class="text-white">Selectionnez une couleur!</h3>
+          <input
+            type="color"
+            id="inputColor"
+            name="favcolor"
+            value="#ff0000"
+            class="border-white border-solid border-2 rounded-sm w-10 h-10"
+          />
+          <div
+            id="colorsList"
+            class="h-16 min-w-[150px] bg-white rounded-lg"
+          ></div>
+          <button id="resetBtn" class="btn btn-sm btn-primary text-xs btn-disable" onclick="resetPallet()">Effacer la pallette</button>
+        </div>
+        <div class="flex flex-col items-center gap-2">
+          <h3 class="text-white">Taille de la grille:</h3>
+          <div id="gridDimensions" class="text-white"></div>
+          <input
+            type="range"
+            min="2"
+            max="50"
+            value="1"
+            class="range range-primary"
+            id="rangeInput"
+          />
+        </div>
+      </div>
+      <div class="card p-4 bg-white">
+        <div id="grid-container" class="w-96 h-96 rounded-md"></div>
+      </div>
     </div>
   </body>
 </html>

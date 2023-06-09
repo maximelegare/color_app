@@ -1,13 +1,18 @@
-body{
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
+* {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  margin: 0;
 }
 
 
-.box{
-  
-  background-color: bisque;
-  border: 2px solid black;
+.color-input{
+  outline: none;
+  border: none;
+  width: 30px;
+  height: 30px;
 }
-  
+
+
